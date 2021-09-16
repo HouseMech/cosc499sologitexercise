@@ -1,6 +1,7 @@
 #Solo Git Exercise for COSC499
 #This exercise will contain a guessing game.
 
+#This branch contains a limited amount of tries for the guessing game
 
 num = (rand() * 10).to_i
 guesses = 3
