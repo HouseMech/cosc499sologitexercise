@@ -3,14 +3,20 @@
 
 
 num = (rand() * 10).to_i
-puts "Welcome to the guessing game! I'm thinking of a number between 1 and 10"
+guesses = 3
+puts "Welcome to the guessing game! I'm thinking of a number between 1 and 10. You have #{guesses} guesses!"
 userResponse = ""
 
 while (userResponse != num)
+  if guesses < 1
+    puts "You ran out of guesses!"
+    break
+  end
   userResponse = gets
   if userResponse.to_i == num
     puts "You guessed it!"
   else
-    puts "Try again!"
+    guesses -= 1
+    puts "Try again! #{guesses} guesses left "
   end
 end
