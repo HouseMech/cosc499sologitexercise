@@ -1,10 +1,6 @@
 #Solo Git Exercise for COSC499
 #This exercise will contain a guessing game.
 
-#This branch contains a limited amount of tries for the guessing game
-
-#In this branch, the game will assist the user by telling them if they need to guess higher, or lower.
-
 num = (rand() * 10).to_i
 guesses = 3
 puts "Welcome to the guessing game! I'm thinking of a number between 1 and 10. You have #{guesses} guesses!"
